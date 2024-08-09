@@ -1,0 +1,44 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #002e5d;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  footer {
+    background-color: #002e5d;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  router-outlet {
+    margin: 20px;
+  }
+  
