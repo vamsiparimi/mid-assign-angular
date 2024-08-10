@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { CommonModule } from '@angular/common'; // Ensure CommonModule is imported here
+import { CommonModule } from '@angular/common'; 
 import { RouterTestingModule } from '@angular/router/testing';
 import { ContactUsComponent } from './contact-us.component';
 import { ContactService } from '../contact.service';
@@ -97,10 +97,10 @@ describe('ContactUsComponent', () => {
     component.sendEmail();
     await fixture.whenStable();
   
-    fixture.detectChanges(); // Ensure the view is updated after async operations
+    fixture.detectChanges(); 
   
     const messageElement = fixture.debugElement.query(By.css('p'));
-    expect(messageElement).not.toBeNull(); // Ensure the element exists
+    expect(messageElement).not.toBeNull(); 
     expect(messageElement.nativeElement.textContent).toContain('Email sent successfully');
   });
 

@@ -41,9 +41,8 @@ describe('AboutUsComponent', () => {
 
   it('should render team members correctly', () => {
     const teamMembers = fixture.debugElement.queryAll(By.css('.team-member'));
-    expect(teamMembers.length).toBeGreaterThan(0); // Ensure at least one team member is rendered
+    expect(teamMembers.length).toBeGreaterThan(0); 
 
-    // Example for the second team member (Taha Ahmed)
     const secondMember = teamMembers[1].nativeElement;
     expect(secondMember.querySelector('h3').textContent).toContain('Taha Ahmed');
     expect(secondMember.querySelector('p').textContent).toContain('CGO');

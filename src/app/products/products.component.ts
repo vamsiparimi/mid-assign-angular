@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css'] // Note: `styleUrl` should be `styleUrls`
+  styleUrls: ['./products.component.css'] 
 })
 export class ProductsComponent {
   title: string = '';

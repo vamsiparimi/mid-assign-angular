@@ -1,4 +1,3 @@
-/* header.component.css */
 header {
     background-color: #333;
     color: white;
@@ -51,7 +50,7 @@ header {
     nav ul {
       flex-direction: column;
       align-items: center;
-      display: none; /* Initially hide the menu */
+      display: none; 
       width: 100%;
       background-color: #333;
       position: absolute;
@@ -61,7 +60,7 @@ header {
     }
   
     nav ul.show-menu {
-      display: flex; /* Show the menu when activated */
+      display: flex; 
     }
   
     nav li {

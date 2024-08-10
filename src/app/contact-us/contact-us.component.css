@@ -1,6 +1,6 @@
 .contact {
-  max-width: 600px; /* Limit the maximum width */
-  margin: 50px auto; /* Center horizontally and add top margin to push it down */
+  max-width: 600px; 
+  margin: 50px auto; 
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 10px;
@@ -33,8 +33,8 @@ textarea {
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 16px;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
-  box-sizing: border-box; /* Ensure padding and border are included in width */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+  box-sizing: border-box; 
 }
 
 input[type="text"]:focus,
@@ -42,7 +42,7 @@ input[type="email"]:focus,
 textarea:focus {
   border-color: #007bff;
   outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
 }
 
 textarea {
@@ -60,12 +60,12 @@ button {
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+  transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 button:hover {
   background-color: #0056b3;
-  transform: scale(1.05); /* Slightly enlarge button on hover */
+  transform: scale(1.05); 
 }
 
 /* Responsive design for tablets and mobile */

@@ -12,7 +12,7 @@ describe('HeaderComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule, HeaderComponent], // Import the standalone component
+      imports: [RouterTestingModule, HeaderComponent], 
     }).compileComponents();
   });
 
