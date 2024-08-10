@@ -40,7 +40,6 @@ header {
   }
   
   nav a:hover {
-    text-decoration: underline;
     background-color: #555;
   }
   

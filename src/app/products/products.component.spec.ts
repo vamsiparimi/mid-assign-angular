@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ProductsComponent } from './products.component';
 
 describe('ProductsComponent', () => {
@@ -19,5 +18,15 @@ describe('ProductsComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should have a method called `initialize`', () => {
+    expect(component.initialize).toBeDefined();
+    expect(typeof component.initialize).toBe('function');
+  });
+
+  it('should have a property `title` initialized as an empty string', () => {
+    expect(component.title).toBeDefined();
+    expect(component.title).toBe('');
   });
 });

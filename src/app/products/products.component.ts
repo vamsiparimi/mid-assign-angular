@@ -5,8 +5,12 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './products.component.html',
-  styleUrl: './products.component.css'
+  styleUrls: ['./products.component.css'] // Note: `styleUrl` should be `styleUrls`
 })
 export class ProductsComponent {
+  title: string = '';
 
+  initialize(): void {
+    this.title = 'Products List';
+  }
 }
