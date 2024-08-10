@@ -1,68 +1,119 @@
-.contact-us {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.contact {
+  max-width: 600px; /* Limit the maximum width */
+  margin: 50px auto; /* Center horizontally and add top margin to push it down */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Responsive design for tablets and mobile */
+@media (max-width: 768px) {
+  .contact {
+    padding: 15px;
   }
-  
+
   h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
+    font-size: 1.5em;
   }
-  
+
   .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555;
-  }
-  
+
   input[type="text"],
   input[type="email"],
-  input[type="tel"],
   textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
+    font-size: 14px;
   }
-  
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="tel"]:focus,
-  textarea:focus {
-    border-color: #007bff;
-    outline: none;
-  }
-  
-  textarea {
-    height: 100px;
-    resize: vertical;
-  }
-  
+
   button {
-    display: block;
-    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
     padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
   }
-  
-  button:hover {
-    background-color: #0056b3;
+
+  h2 {
+    font-size: 1.2em;
   }
-  
+
+  .form-group {
+    margin-bottom: 8px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

@@ -1,0 +1,120 @@
+.aboutus-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #323131;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  section {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  section p {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .team-member {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+  }
+  
+  .team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .team-member h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .team-member p {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  footer {
+    background: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2em;
+    }
+    
+    header p {
+      font-size: 1em;
+    }
+  
+    section h2 {
+      font-size: 1.5em;
+    }
+    
+    .team-member {
+      width: 150px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.5em;
+    }
+    
+    header p {
+      font-size: 0.9em;
+    }
+  
+    section h2 {
+      font-size: 1.2em;
+    }
+    
+    .team-member {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  

@@ -1,63 +1,81 @@
-/* Container for the introduction section */
-.intro-container {
+/* home.component.css */
+.breaking-news {
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+  
+  .breaking-news .news-content {
     text-align: center;
-    padding: 50px;
-    background: linear-gradient(to right, #f0f4f8, #ffffff);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  /* Main heading */
-  .intro-container h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #333;
+  .breaking-news img {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 10px;
   }
   
-  /* Introduction text */
-  .intro-text {
-    font-size: 1.2em;
-    color: #555;
-    margin-bottom: 30px;
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
   }
   
-  .intro-text strong {
-    color: #007bff; /* Highlight color for React and Angular */
+  .news-item {
+    text-align: center;
   }
   
-  /* Call to Action buttons */
-  .cta-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+  .news-item img {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 10px;
   }
   
-  .cta-button {
-    display: inline-block;
-    padding: 15px 25px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.1em;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  .news-item p {
+    font-size: 12px;
+    color: grey;
   }
   
-  .react-button {
-    background-color: #61dafb; /* React blue */
+  .news-item h3 {
+    font-size: 18px;
   }
   
-  .react-button:hover {
-    background-color: #4fa3c0;
-    transform: translateY(-2px);
+  .news-item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform: scale(1.03);
+    transition: all 0.3s ease;
   }
   
-  .angular-button {
-    background-color: #dd0031; /* Angular red */
+  .sign-in-cta {
+    text-align: center;
+    margin-top: 20px;
   }
   
-  .angular-button:hover {
-    background-color: #b92d2e;
-    transform: translateY(-2px);
+  .sign-in-cta p {
+    font-size: 22px;
+  }
+  
+  .sign-in-cta button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sign-in-cta button:hover {
+    background-color: darkgreen;
+  }
+  
+  @media (max-width: 600px) {
+    .news-grid {
+      grid-template-columns: 1fr; /* Stacks the grid items on smaller screens */
+    }
+    .breaking-news img, .news-item img {
+      width: 100%; /* Full width on smaller screens */
+    }
   }
   

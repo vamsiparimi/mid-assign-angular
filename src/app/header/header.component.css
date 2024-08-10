@@ -1,7 +1,27 @@
+/* header.component.css */
 header {
     background-color: #333;
     color: white;
     padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s;
+  }
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0px;
+
   }
   
   nav ul {
@@ -10,14 +30,45 @@ header {
     justify-content: space-around;
     margin: 0;
     padding: 0;
+    transition: transform 0.3s ease-in-out;
   }
   
   nav a {
     color: white;
     text-decoration: none;
+    padding: 10px;
   }
   
   nav a:hover {
     text-decoration: underline;
+    background-color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      display: none; /* Initially hide the menu */
+      width: 100%;
+      background-color: #333;
+      position: absolute;
+      top: 25px;
+      left: 0;
+      right: 0;
+    }
+  
+    nav ul.show-menu {
+      display: flex; /* Show the menu when activated */
+    }
+  
+    nav li {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
   }
   

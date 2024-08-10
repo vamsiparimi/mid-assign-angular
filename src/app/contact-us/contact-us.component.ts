@@ -1,4 +1,3 @@
-// contact-us.component.ts
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ContactService } from '../contact.service';
@@ -26,11 +25,13 @@ export class ContactUsComponent {
       .then(response => {
         this.message = response.message;
         if (response.success) {
+          alert('Message has been sent successfully!');
           this.formData = { name: '', email: '', subject: '', message: '' };
         }
       })
       .catch(error => {
         this.message = 'There was an error sending your message. Please try again.';
+        alert('There was an error sending your message. Please try again.');
       });
   }
 }
